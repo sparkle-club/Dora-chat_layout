@@ -57,7 +57,7 @@ export class ChatComponent {
     const finalConfig: ChatComponentConfig = {
         ...getDefaultChatConfig(),
         ...config
-    };
+    }; // 合并默认配置和传入的配置
 		const {
 			x, y, width, height,
 			chatSize,labelSize,titletxt,fontPath,
@@ -65,7 +65,7 @@ export class ChatComponent {
 			borderWidth,borderColor,
 			onOptionClick,
 			onChatClick
-		} = finalConfig;
+		} = finalConfig; // 解构配置对象
 
 		this.onOptionClick = onOptionClick;
 		this.onChatClick = onChatClick;
